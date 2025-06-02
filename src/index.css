@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@layer base {
+  body {
+    font-family: "WDXL Lubrifont TC", sans-serif;
+  }
+}

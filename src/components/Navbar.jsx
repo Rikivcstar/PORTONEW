@@ -1,0 +1,54 @@
+import { useState, useEffect } from "react";
+export const Navbar = () => {
+  const [active, setActive] = useState(false);
+
+  useEffect(() => {
+    const handelScroll = () => {
+      if (window.scrollY > 150) {
+        setActive(true);
+      } else {
+        setActive(false);
+      }
+    };
+
+    window.addEventListener("scroll", handelScroll);
+    return () => {
+      window.removeEventListener("scroll", handelScroll);
+    };
+  }, []);
+  return (
+    <div className="navbar py-7 flex items-center justify-between ">
+      <div className="logo">
+        <h1 className="text-3xl font-bold bg-white text-black p-1 md:bg-transparent md:text-white">
+          logo
+        </h1>
+      </div>
+      <ul
+        className={` menu flex items-center md:static sm:gap-14 gap-5 fixed left-1/2 -translate-x-1/2 md:-translate-x-0  md:opacity-100 md:top-0 bg-white/30 backdrop:blur-md p-4 rounded-br-2xl rounded-bl-2xl md:bg-transparent transition-all md:transition-none z-10 ${
+          active ? "top-0 opacity-100" : "-top-10 opacity-0"
+        }`}
+      >
+        <li>
+          <a href="#home" className="sm:text-lg text-base font-medium">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#about" className="sm:text-lg text-base font-medium">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="#project" className="sm:text-lg text-base font-medium">
+            Project
+          </a>
+        </li>
+        <li>
+          <a href="#contact" className="sm:text-lg text-base  font-medium">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+  );
+};
