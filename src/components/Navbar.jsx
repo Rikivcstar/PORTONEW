@@ -20,7 +20,7 @@ export const Navbar = () => {
     <div className="navbar py-7 flex items-center justify-between ">
       <div className="logo">
         <h1 className="text-3xl font-bold bg-white text-black p-1 md:bg-transparent md:text-white">
-          logo
+          TechTrade
         </h1>
       </div>
       <ul

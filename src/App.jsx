@@ -35,14 +35,14 @@ function App() {
           </p>
           <div className="flex items-center sm:gap-4 gap-2">
             <a
-              href=""
+              href="#contact"
               className="bg-violet-800 p-4 font-bold rounded-2xl hover:bg-violet-500"
             >
               Contact Me
               <i className="ri-download-2-line ml-2 ri-lg"></i>
             </a>
             <a
-              href=""
+              href="#project"
               className="bg-slate-700 p-4 rounded-2xl font-bold hover:bg-slate-500"
             >
               Look a Project <i className="ri-eye-2-line ml-1 ri-lg"></i>
@@ -59,7 +59,7 @@ function App() {
       </div>
 
       {/* section about */}
-      <div className="about mt-32 py-10" id="home">
+      <div className="about mt-32 py-10" id="about">
         <div
           className="xl:w-2/3 lg:w-3/4 w-full p-7 mx-auto bg-zinc-800 rounded-lg"
           data-aos="fade-up"
