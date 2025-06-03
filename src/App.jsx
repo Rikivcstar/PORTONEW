@@ -38,7 +38,7 @@ function App() {
               href=""
               className="bg-violet-800 p-4 font-bold rounded-2xl hover:bg-violet-500"
             >
-              Download CV
+              Contact Me
               <i className="ri-download-2-line ml-2 ri-lg"></i>
             </a>
             <a
